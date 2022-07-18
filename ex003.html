@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doc</title>
+    <style>
+        body {
+            background-color: tan;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá Mundo!</h1>
+    <p>Já me livrei da maldição.</p>
+    <script>
+        var n1 = Number.parseInt(window.prompt('Digite um número: ')) //string 
+        var n2 = Number.parseFloat(window.prompt('Digite um outro número: ')) // string
+        var s = n1 + n2
+
+        //window.alert('A soma dos valores é: ' + s.toString())  contatenação
+
+        //Template Strings:
+        window.alert(`A soma entre ${n1} e ${n2} é ${s}`) // recomendo usar essa forma;
+
+
+        /*
+        1- (number + number)+ para adição;
+        2- (string + string)+ para concatenação;
+        3- Com o Number.parseInt(n) ou Number;parseFloat(n) a a string se tranformar em number int ou number float;
+        4- Também em casos genericos podemos usar apenas o Number(n);
+        5- Quando queremos passar de type number para string podemos usar o String(n) ou colocar no final o n.toString();
+        */
+    </script>
+</body>
+</html>
