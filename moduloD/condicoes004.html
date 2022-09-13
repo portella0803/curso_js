@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>País de Origem</title>
+</head>
+<body>
+    <h1>Você é brasileiro?</h1>
+    <span>Seu país de origem è o/a <input type="text" name="txtp" id="txtp">.</span>
+    <input type="button" value="verificar" onclick="testar()">
+    <div id="res">
+
+    </div>
+    <script>
+        function testar(){
+        var txt = document.querySelector('input#txtp')
+        var res = document.querySelector('div#res')
+        var p = String(txt.value)
+        if(p == "brasil"){
+            res.innerHTML = 'Você é brasileiro!' 
+        }
+        else{
+            res.innerHTML = 'Você é estrangeiro!'
+        }
+        }
+    
+    </script>
+</body>
+</html>
